@@ -1,0 +1,293 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
+ul[class],
+ol[class] {
+  padding: 0;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+ul[class] {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+body {
+  min-height: 100vh;
+  font-family: "Roboto Condensed", sans-serif;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 18px;
+  color: #242121;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+.title {
+  font-family: "Raleway", sans-serif;
+  font-size: 48px;
+  font-weight: 500;
+  line-height: 120%;
+  letter-spacing: 0.6px;
+  color: #01353e;
+  padding-bottom: 27px;
+  position: relative;
+  display: inline;
+}
+
+.title::after {
+  content: "/";
+  font-size: 72px;
+  line-height: 115%;
+  color: #00b2a0;
+  position: absolute;
+  bottom: 0;
+  right: -40px;
+}
+
+/* HEADER */
+
+.header {
+  background-image: url(/images//heder-img.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom center;
+  min-height: 100vh;
+}
+
+.header__top {
+  margin-bottom: 297px;
+}
+
+.header__top-inner {
+  display: flex;
+  align-items: center;
+  padding-top: 33px;
+}
+
+.logo {
+  margin-right: 185px;
+}
+
+.menu__list {
+  display: flex;
+}
+
+.menu__list-item + .menu__list-item {
+  margin-left: 45px;
+}
+
+.menu__list-link {
+  padding: 0 2px 10px;
+  font-size: 24px;
+  font-weight: normal;
+  line-height: 105%;
+  letter-spacing: 0.6px;
+  color: #fff;
+  transition: all 0.5s;
+}
+
+.menu__list-link:hover {
+  border-bottom: 1px solid #00b2a0;
+}
+
+.header__content-inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header__title {
+  font-size: 200px;
+  font-weight: bold;
+  letter-spacing: 0.6px;
+  line-height: 90%;
+  color: #0d302c;
+  font-family: "Raleway", sans-serif;
+  margin-bottom: 28px;
+}
+
+.header__subtitle {
+  font-size: 24px;
+  font-weight: normal;
+  line-height: 105%;
+  color: #000;
+  letter-spacing: 0.6px;
+  margin-bottom: 315px;
+}
+
+.header__icon {
+  margin-bottom: 90px;
+}
+
+/* ABOUT */
+.about {
+  padding: 190px 0 200px;
+}
+
+.about__inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.about__title {
+  margin-bottom: 100px;
+}
+
+.about__text {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 120px;
+}
+
+.about__text p {
+  max-width: 480px;
+  margin-bottom: 30px;
+  line-height: 18px;
+  letter-spacing: 0.6px;
+}
+
+/* PERKS */
+.perks {
+  padding: 200px 0;
+  background-color: #f8f8f8;
+}
+
+.perks__inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.perks__title {
+  margin-bottom: 100px;
+}
+
+.perks__items {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  margin-bottom: 100px;
+}
+
+.perks__item {
+  width: 350px;
+}
+
+.perks__item-title {
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 18px;
+  letter-spacing: 0.6px;
+  color: #242121;
+  margin-bottom: 20px;
+  margin-left: 10px;
+  text-align: center;
+  position: relative;
+}
+
+.perks__item-title::before {
+  content: "";
+  position: absolute;
+  top: -20px;
+  left: calc(-3%);
+  width: 50px;
+  height: 50px;
+}
+
+.perks__item-title-accomodation::before {
+  background: url("/images/sun-icon.svg");
+  background-repeat: no-repeat;
+}
+
+.perks__item-title-flight::before {
+  background-image: url("/images/plane-icon.svg");
+  background-repeat: no-repeat;
+}
+
+.perks__item-title-teaching::before {
+  background-image: url("/images/surfing-icon.svg");
+  background-repeat: no-repeat;
+}
+
+.perks__advantages {
+  width: 100%;
+  display: flex;
+}
+
+.perks__info {
+  width: 350px;
+  margin-right: 250px;
+  flex: none;
+}
+
+.perks__info-item {
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 300;
+  letter-spacing: 0.6px;
+  color: #242121;
+  padding: 1px 0 10px;
+  width: 100%;
+}
+
+.perks__info-wave {
+  display: flex;
+  gap: 10px;
+  width: 100%;
+}
+
+.perks__info-wave span {
+  font-size: 24px;
+  line-height: 18px;
+  letter-spacing: 0.6px;
+  color: #242121;
+  font-weight: 400;
+}
