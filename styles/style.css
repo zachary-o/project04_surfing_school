@@ -63,8 +63,8 @@ body {
 
 .container {
   max-width: 1200px;
-  margin: 0 auto;
   padding: 0 10px;
+  margin: 0 auto;
 }
 
 .title {
@@ -76,7 +76,7 @@ body {
   color: #01353e;
   padding-bottom: 27px;
   position: relative;
-  display: inline;
+  align-self: center;
 }
 
 .title::after {
@@ -86,21 +86,16 @@ body {
   color: #00b2a0;
   position: absolute;
   bottom: 0;
-  right: -40px;
 }
 
 /* HEADER */
 
 .header {
-  background-image: url(/images//heder-img.jpg);
+  background-image: url("/images/heder-img.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: bottom center;
   min-height: 100vh;
-}
-
-.header__top {
-  margin-bottom: 297px;
 }
 
 .header__top-inner {
@@ -136,6 +131,7 @@ body {
 }
 
 .header__content-inner {
+  min-height: calc(100vh - 90px);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -146,19 +142,19 @@ body {
   font-size: 200px;
   font-weight: bold;
   letter-spacing: 0.6px;
-  line-height: 90%;
+  line-height: 110%;
   color: #0d302c;
   font-family: "Raleway", sans-serif;
-  margin-bottom: 28px;
+  margin-bottom: 42px;
 }
 
 .header__subtitle {
   font-size: 24px;
   font-weight: normal;
-  line-height: 105%;
+  line-height: 135%;
   color: #000;
   letter-spacing: 0.6px;
-  margin-bottom: 315px;
+  margin-bottom: auto;
 }
 
 .header__icon {
@@ -166,6 +162,7 @@ body {
 }
 
 /* ABOUT */
+
 .about {
   padding: 190px 0 200px;
 }
@@ -195,6 +192,7 @@ body {
 }
 
 /* PERKS */
+
 .perks {
   padding: 200px 0;
   background-color: #f8f8f8;
@@ -260,10 +258,12 @@ body {
 .perks__advantages {
   width: 100%;
   display: flex;
+  align-items: flex-start;
 }
 
 .perks__info {
   width: 350px;
+  margin-top: 10px;
   margin-right: 250px;
   flex: none;
 }
@@ -276,18 +276,119 @@ body {
   color: #242121;
   padding: 1px 0 10px;
   width: 100%;
+  position: relative;
 }
 
-.perks__info-wave {
-  display: flex;
-  gap: 10px;
-  width: 100%;
-}
-
-.perks__info-wave span {
+.perks__info-item span {
   font-size: 24px;
   line-height: 18px;
   letter-spacing: 0.6px;
   color: #242121;
   font-weight: 400;
+  position: absolute;
+  top: 0;
+}
+
+.perks__info-item p {
+  margin: 1px 0 10px;
+  color: #242121;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 300;
+  letter-spacing: 0.6px;
+}
+
+.perks__text p {
+  margin-bottom: 30px;
+}
+
+/* CONQUER THE PEAKS */
+
+.conquer-peaks {
+  background-image: url("../images/conquer-peaks.jpg");
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: 50%;
+  max-height: 850px;
+}
+
+.conquer-peaks__inner {
+  max-width: 510px;
+  margin-right: auto;
+}
+
+.conquer-peaks__title {
+  text-align: center;
+  padding-top: 50px;
+  margin-bottom: 100px;
+}
+
+.conquer-peaks__text {
+  padding-bottom: 30px;
+}
+
+.conquer-peaks__text p {
+  margin-bottom: 30px;
+}
+
+/* PORTFOLIO */
+
+.portfolio {
+  padding: 200px 0;
+}
+
+.portfolio__title {
+  text-align: center;
+  margin-bottom: 212px;
+}
+
+.portfolio__btn {
+  background: transparent;
+  border: none;
+  font-size: 24px;
+  line-height: 18px;
+  text-transform: uppercase;
+  letter-spacing: 0.6px;
+  font-weight: normal;
+  color: #242121;
+  margin-right: 20px;
+}
+
+.mixitup-control-active {
+  color: #00b2a0;
+}
+
+.portfolio__content {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  grid-template-rows: repeat(8, 10vw);
+  grid-gap: 40px;
+  margin-top: 50px;
+}
+
+.portfolio__item-1 {
+  grid-column-start: 1;
+  grid-column-end: 5;
+  grid-row-start: 1;
+  grid-row-end: 3;
+}
+
+.portfolio__item-2 {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 3;
+  grid-row-end: 5;
+}
+
+.portfolio__item-3 {
+  grid-column-start: 3;
+  grid-column-end: 5;
+  grid-row-start: 3;
+  grid-row-end: 5;
+}
+
+.portfolio__item img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
 }
