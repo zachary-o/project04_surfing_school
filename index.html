@@ -10,6 +10,8 @@
       href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="styles/jquery.fancybox.min.css" />
+    <link rel="stylesheet" href="styles/swiper-bundle.min.css" />
     <link rel="stylesheet" href="styles/style.css" />
   </head>
   <body>
@@ -258,30 +260,234 @@
           </div>
         </div>
         <div class="portfolio__content">
-          <div class="portfolio__item portfolio__item-1 mix category-a">
+          <div class="portfolio__item big mix category-a">
             <img src="./images/portfolio/1.jpg" alt="" />
           </div>
-          <div class="portfolio__item portfolio__item-2 mix category-b">
+          <div class="portfolio__item mix category-b">
             <img src="./images/portfolio/2.jpg" alt="" />
           </div>
-          <div class="portfolio__item portfolio__item-3 mix category-c">
+          <div class="portfolio__item mix category-c">
             <img src="./images/portfolio/3.jpg" alt="" />
           </div>
-          <div class="portfolio__item portfolio__item-4 mix category-a">
+          <div class="portfolio__item mix category-a">
             <img src="./images/portfolio/4.jpg" alt="" />
           </div>
-          <div class="portfolio__item portfolio__item-5 mix category-b">
+          <div class="portfolio__item mix category-b">
             <img src="./images/portfolio/5.jpg" alt="" />
           </div>
-          <div class="portfolio__item portfolio__item-6 mix category-c">
+          <div class="portfolio__item big mix category-c">
             <img src="./images/portfolio/6.jpg" alt="" />
           </div>
         </div>
       </div>
+      <a class="portfolio__view-more" href="#">SHOW MORE</a>
+      <blockquote class="blockquote">
+        "If you have any doubts, go surfing!"
+        <span class="blockquote__author"
+          >Petro Zaloopchenko, famous surfer in Zhmerynka</span
+        >
+      </blockquote>
+      <div class="container">
+        <div class="portfolio__video">
+          <a
+            class="portfolio__video-link"
+            href="https://www.youtube.com/watch?v=zZqxPozl2Ec"
+            data-fancybox
+          >
+            <img src="./images/play-btn.svg" alt="play icon" />
+          </a>
+        </div>
+        <div class="portfolio__numbers">
+          <div class="portfolio__numbers-item">
+            450
+            <span>tourists</span>
+          </div>
+          <div class="portfolio__numbers-item">
+            2500
+            <span>surfing hours</span>
+          </div>
+          <div class="portfolio__numbers-item">
+            10
+            <span>prefoessional instructors</span>
+          </div>
+          <div class="portfolio__numbers-item">
+            356
+            <span>days per year</span>
+          </div>
+        </div>
+      </div>
     </section>
+    <!-- slider -->
+    <section class="slider">
+      <div class="container">
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <a class="slider__item-link" href="#">
+                <h3 class="slider__item-title">
+                  WHAT DO YOU NEED TO TAKE ON THE SURF TOUR
+                </h3>
+                <p class="slider__item-desc">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Pariatur, omnis.
+                </p>
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a class="slider__item-link" href="#">
+                <h3 class="slider__item-title">BLA BLA BLA BLA BLA</h3>
+                <p class="slider__item-desc">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Pariatur, omnis.
+                </p>
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a class="slider__item-link" href="#">
+                <h3 class="slider__item-title">LOL LOL LOL LOL LOL</h3>
+                <p class="slider__item-desc">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Pariatur, omnis.
+                </p>
+              </a>
+            </div>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+    </section>
+    <!-- team -->
+    <section class="team">
+      <div class="container team__container">
+        <h2 class="title team__title">OUR TEAM</h2>
+        <div class="team__items">
+          <div class="team__item">
+            <img src="images/team-1.jpg" alt="" />
+            <h6 class="team__name">Petro</h6>
+            <p class="team__position">Chief Instructor</p>
+          </div>
+          <div class="team__item">
+            <img src="images/team-2.jpg" alt="" />
+            <h6 class="team__name">Marichka</h6>
+            <p class="team__position">Instructor</p>
+          </div>
+          <div class="team__item">
+            <img src="images/team-3.jpg" alt="" />
+            <h6 class="team__name">Oksana</h6>
+            <p class="team__position">Instructor</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- packages -->
+    <section class="packages">
+      <div class="container packages__container">
+        <h2 class="title packages__title">SERVICE PACKAGES</h2>
+        <div class="packages__items">
+          <div class="package__item">
+            <div class="package__item-info">
+              <h4 class="package__name">Standard</h4>
+              <span>6 days of accomodation on a villa</span>
+              <span>Standart room</span>
+              <span>Surfing gear</span>
+              <span>Surfing lessons 5 sessions, 2 hours each</span>
+              <span>Insurance</span>
+              <span>Party with snacks</span>
+            </div>
+            <h4 class="package__price">450</h4>
+          </div>
+          <div class="package__item">
+            <div class="package__item-info">
+              <h4 class="package__name">All inclusive</h4>
+              <span>6 days of accomodation on a villa</span>
+              <span>Luxury room</span>
+              <span>Surfing gear</span>
+              <span>Surfing lessons 8 sessions, 2 hours each</span>
+              <span>Insurance</span>
+              <span>Party with snacks</span>
+              <span>Flight Tenerife-Zhmerynka-Tenerife</span>
+              <span>Breakfast included</span>
+            </div>
+            <h4 class="package__price">950</h4>
+          </div>
+          <div class="package__item">
+            <div class="package__item-info">
+              <h4 class="package__name">Pro</h4>
+              <span>8 days of accomodation on a villa</span>
+              <span>Luxury room</span>
+              <span>Surfing gear</span>
+              <span>Surfing lessons 16 sessions, 2 hours each</span>
+              <span>Insurance</span>
+              <span>Party with snacks</span>
+              <span>Flight Tenerife-Zhmerynka-Tenerife</span>
+              <span>Breakfast and dinner included</span>
+            </div>
+            <h4 class="package__price">1450</h4>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- map -->
+    <section class="map">
+      <div class="container">
+        <div class="map__inner">
+          <img class="map__image" src="images/map.jpg" alt="" />
+          <span class="map__pin"></span>
+        </div>
+      </div>
+    </section>
+    <!-- contact form -->
+    <section class="connection">
+      <div class="container connection__container">
+        <h2 class="title connection__title">LEAVE AN APPLICATION</h2>
+        <div class="connection__top">
+          <form class="form">
+            <input type="text" placeholder="Name" />
+            <input type="text" placeholder="Email" />
+            <textarea
+              placeholder="Leave your message and we will contact you"
+            ></textarea>
+            <button type="submit">SEND</button>
+          </form>
+          <div class="connection__address">
+            <p>
+              You have a question?<br />
+              You can contact us:
+            </p>
+            <p>
+              WhatsApp, Viber, Telegram<br />
+              <a href="tel:+34674863788">+3 467 486-37-88</a>
+            </p>
+            <address>
+              Avenida grandes playas 79,<br />
+              Corralejo la Oliva Fuerteventura,<br />
+              Spain. 35660
+            </address>
+          </div>
+        </div>
+        <div class="connection__bottom">
+          <ul class="connection__social">
+            <li class="connection__social-list">
+              <a href="" class="connection__social-link">Instagram</a>
+            </li>
+            <li class="connection__social-list">
+              <a href="" class="connection__social-link">Facebook</a>
+            </li>
+            <li class="connection__social-list">
+              <a href="" class="connection__social-link">youtube</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <!-- footer -->
+    <footer class="footer">
+      <img class="footer__logo" src="images/logo.svg" alt="" />
+    </footer>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="scripts/mixitup.min.js"></script>
+    <script src="scripts/swiper-bundle.min.js"></script>
     <script src="scripts/jquery.fancybox.min.js"></script>
     <script src="scripts/index.js"></script>
   </body>
